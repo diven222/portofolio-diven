@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Diven</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body class="bg-white text-gray-800 transition duration-300" id="body">
+
+  <!-- Navbar -->
+  <header class="fixed w-full top-0 backdrop-blur bg-white/70 shadow z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-600">Diventranus</h1>
+      <nav class="hidden md:flex gap-6 font-medium text-blue-600">
+        <a href="#tentang">Tentang</a>
+        <a href="#projek">Projek</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="darkModeToggle" class="text-xl">🌙</button>
+        <button id="toggleButton" class="md:hidden text-2xl">☰</button>
+      </div>
+    </div>
+    <div id="navLinks" class="md:hidden hidden flex-col bg-white px-4 py-2 space-y-2 text-blue-600 font-medium">
+      <a href="#tentang">Tentang</a>
+      <a href="#projek">Projek</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="pt-28 pb-12 text-center">
+    <h2 class="text-3xl font-bold mb-2">Halo, Saya Diventranus</h2>
+    <p class="text-gray-600">Mahasiswa | IT Support | Calon Web Developer</p>
+  </section>
+
+  <!-- Tentang -->
+  <section id="tentang" class="max-w-3xl mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold mb-4">Tentang Saya</h2>
+    <p>Saya sedang belajar membangun portofolio dengan Tailwind CSS dan ingin menjadi developer profesional.</p>
+  </section>
+
+  <!-- Projek -->
+  <section id="projek" class="max-w-5xl mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold mb-6 text-center">Projek Saya</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white shadow rounded-lg p-6 hover:scale-[1.02] transition">
+        <h3 class="text-xl font-semibold">SIPEKERBA</h3>
+        <p class="text-gray-600">Sistem pengaduan kerusakan barang berbasis PHP & MySQL.</p>
+      </div>
+      <div class="bg-white shadow rounded-lg p-6 hover:scale-[1.02] transition">
+        <h3 class="text-xl font-semibold">Portofolio HTML</h3>
+        <p class="text-gray-600">Website portofolio menggunakan HTML, CSS, dan JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeri -->
+  <section id="galeri" class="max-w-6xl mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold mb-6 text-center">Galeri Saya</h2>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="/img/foto 3.jpg" class="rounded-lg shadow hover:scale-105 transition" alt="Foto 1" />
+      <img src="/img/foto 2.jpg" class="rounded-lg shadow hover:scale-105 transition" alt="Foto 2" />
+      <img src="/img/foto 1.jpg" class="rounded-lg shadow hover:scale-105 transition" alt="Foto 3" />
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="max-w-3xl mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold mb-4">Hubungi Saya</h2>
+    <form id="formKontak" class="space-y-4">
+      <input type="text" placeholder="Nama" required class="w-full p-3 border rounded-lg" />
+      <input type="email" placeholder="Email" required class="w-full p-3 border rounded-lg" />
+      <textarea placeholder="Pesan" required class="w-full p-3 border rounded-lg"></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Kirim</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-500 py-6">
+    © 2025 Diven. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
